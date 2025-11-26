@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: List files
+      - name: List Files for Debug
         run: ls -R
 
       - name: Set up Python
@@ -25,5 +25,5 @@ jobs:
       - name: Install pytest
         run: pip install pytest
 
-      - name: Run tests
+      - name: Run Tests
         run: pytest -v
